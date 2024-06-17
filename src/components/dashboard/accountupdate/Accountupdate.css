@@ -1,0 +1,72 @@
+.banklist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.banklist > .account-search {
+    padding-top: 2rem;
+    width: 80%;
+    background: #ffffff;
+    align-items: center;
+}
+
+.account-search > .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.search-box > div {
+    background: #E7E7E7; 
+    width: 70%;
+    height: 60px;
+    display: flex;  
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 15px;
+}
+
+.search-box > div > p {
+    color: #878787;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.account-search > .bank-name {
+    background: var(--new-2-sec, rgba(48, 203, 1, 0.28));
+    margin: 1rem 0;
+    padding: 1rem 0 1rem 3rem;
+    color: #878787;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .banklist > .account-search {
+        width: 90%;
+    }
+
+    .search-box > div {
+        width: 100%;
+    }
+
+    .search-box > div > p {
+        font-size: 16px;
+    }
+
+    .account-search > .bank-name {
+        padding: 1rem;
+        font-size: 14px;
+    }
+}

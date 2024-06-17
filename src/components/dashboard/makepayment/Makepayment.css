@@ -1,0 +1,93 @@
+.makepayment-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.makepayment-logo > img {
+    margin-bottom: 2rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: auto;
+    height: 80px;
+}
+
+.makepayment-content {
+    background: rgba(1, 255, 1, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 0 3rem;
+    border-radius: 15px;
+    height: 70px;
+}
+
+.makepayment-content > p {
+    color: var(--dark-lettering, #000);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 153%; /* 55.08px */
+}
+
+.makepayment-name, .makepayment-button {
+    text-align: center;
+}
+
+.makepayment-name > h4 {
+    color: var(--dark-lettering, #000);
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 153%;
+}
+
+.makepayment-name > a > .check-info {
+    color: #878787;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.makepayment-button {
+    display: flex;
+    justify-content: center;
+}
+
+.makepayment-button > .payment-link {
+    color: #ffffff;
+    background-color: var(--primary-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 20px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.makepayment-button > .payment-link {
+    color: var(--bg, #FFF);
+    text-shadow: 0px 0.1px 0.1px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+    .makepayment-content {
+        padding: 0 0.7rem;
+    }
+    .makepayment-content > p {
+        font-size: 14px;
+    }
+
+    .makepayment-button > .payment-link {
+        font-size: 15px;
+        gap: 10px;
+        padding: 0.5rem 1.5rem;
+
+    }
+
+
+}

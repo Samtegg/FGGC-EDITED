@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-brown: #cb822a;
+  --primary-green : #30cb00;
+  --primary-ash: #b8b6b6;
+  --primary-white: #ffffff;
+}
+
+
+body {
+  margin: 0;
+  font-family: Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.color-brown{
+  color: var(--primary-brown)
+}
+
+.color-green{
+  color: var(--primary-green)
+}
+
+.color-ash{
+  color: var(--primary-ash)
+}
+
+.color-white{
+  color: var(--primary-ash)
+}
+
+.ml-2{
+  margin-left: 2px;
+}

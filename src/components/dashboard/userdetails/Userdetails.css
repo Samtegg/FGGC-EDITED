@@ -1,0 +1,213 @@
+.userdetails-container {
+    display: flex;
+    width: 100%;
+    padding: 20px 143px 40px 143px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+    background: #F1F1F1;
+}
+
+.userdetails-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.userdetails-logo > img {
+    width: auto;
+    height: 80px;
+}
+
+.userdetails-cover {
+    display: flex;
+    flex-direction: column;
+    
+}
+.userdetails-cover > .userdetails-content {
+    width: 700px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--bg, #FFF);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.userdetails-content > h3 {
+    color: var(--dark-lettering, #000);
+    text-align: left;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; 
+}
+
+.userdetails-info > p {
+    color: var(--amount-color, #5C5C5C);
+text-align: center;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 153%; /* 45.9px */
+}
+
+.userdetails-content > .userdetails-line {
+    width: 100%;
+    height: 1px;
+    background: var(--amount-color, #5C5C5C);
+}
+
+.userdetails-content > .userdetails-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+}
+
+.userdetails-instruction {
+    color: var(--amount-color, #5C5C5C);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; /* 52.02px */
+}
+
+.userdetails-instruction > .instruction-call{
+    color: var(--amount-color, #5C5C5C);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%; /* 45.9px */
+}
+
+.userdetails-button {
+    border: 0px;
+}
+
+.userdetails-button > .pending-link{
+    display: flex;
+    width: 400px;
+    height: 50px;
+    padding: 16px 31px 15px 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--new-primary, #CB822A);
+    color: var(--bg, #FFF);
+    text-align: center;
+    text-shadow: 0px 0.1px 0.1px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+    border: 0px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .userdetails-container {
+        padding: 20px 10px; /* Adjusted padding for smaller screens */
+    }
+
+
+
+    .userdetails-cover > .userdetails-content {
+        padding: 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .userdetails-button > .pending-link {
+        width: 100%; /* Adjusted width for smaller screens */
+        max-width: none; /* No maximum width for smaller screens */
+    }
+}
+
+@media screen and (max-width:425px) {
+
+
+    .userdetails-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .userdetails-content > .userdetails-info {
+        display: flex;
+    
+        margin: 0;
+    }
+    .userdetails-cover > .userdetails-content {
+        width: 280px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: var(--bg, #FFF);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+    }
+
+    .userdetails-instruction > p {
+        font-size: 15px;
+    }
+
+    .userdetails-instruction > .instruction-call{
+        color: var(--amount-color, #5C5C5C);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 153%; /* 45.9px */
+    }
+
+    .userdetails-info > p {
+        color: var(--amount-color, #5C5C5C);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; /* 45.9px */
+    }
+
+    .userdetails-button > .pending-link{
+        display: flex;
+        width: 250px;
+        height: 20px;
+        padding: 16px 31px 15px 32px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+
+
+
+    @media only screen and (max-width: 320px) {
+        .userdetails-container{
+            box-sizing: initial;
+        }
+        .userdetails-container {
+            max-width: 300px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #root {
+            width: 300px;
+        }
+    }
+    
+}

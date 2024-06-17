@@ -1,0 +1,188 @@
+.payoutportal-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.payoutportal-logo > .logo > img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: auto;
+    height: 80px;
+}
+
+.payoutportal-heading {
+    margin: 1rem;
+}
+.payoutportal-heading > h2 {
+    color: var(--amount-color, #5C5C5C);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.payoutportal-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.payoutportal-wallet {
+    width: 50%;
+    height: 150px;
+    display: inline;
+    background-image: url(../dashboardpage/../../assets/brown-background.png)  ;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+.payoutportal-dashboard{
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.payoutportal-dashboard > h2 {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 153%; /* 61.2px */
+}
+
+.payoutportal-dashboard > p   {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+}
+
+.payoutportal-dashboard > h4  {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 153%;
+}
+
+
+.payoutportal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background: #ffffff;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+}
+
+.payoutportal-content > div > .payoutportal-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.payoutportal-details > div > .payoutportal-name {
+    color: #343A40;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+}
+.payoutportal-details > div > .payoutportal-date {
+    color: var(--amount-color, #5C5C5C);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 200%; 
+
+}
+.payoutportal-details > div > .payoutportal-cash {
+    color: var(--debit-color, #FA0000);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%; 
+}
+
+.payoutportal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #a1a1a1;
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .payoutportal-logo > .logo > img {
+        width: 60px;
+        height: auto;
+    }
+
+    .payoutportal-second {
+        padding: 1rem;
+    }
+
+    .payoutportal-wallet {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .payoutportal-dashboard {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    .payoutportal-dashboard > h2 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .payoutportal-dashboard > p {
+        font-size: 12px;
+    }
+
+    .payoutportal-dashboard > h4 {
+        font-size: 15px;
+    }
+
+    .payoutportal-content {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    .payoutportal-details > div > .payoutportal-name {
+        font-size: 16px;
+    }
+
+    .payoutportal-details > div > .payoutportal-date,
+    .payoutportal-details > div > .payoutportal-cash {
+        font-size: 12px;
+    }
+
+    .payoutportal-line {
+        margin: 0.5rem 0;
+    }
+}

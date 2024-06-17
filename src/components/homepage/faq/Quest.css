@@ -1,0 +1,26 @@
+.quest-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 10% 0;
+    
+    
+}
+
+.quest-content {
+    margin: 2% 10%;
+    padding: 2% ;
+    border: 1px solid var(--primary-brown);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .quest-container {
+        margin: 5% 0; 
+    }
+
+    .quest-content {
+        margin: 2% 3%; 
+        padding: 2%; 
+    }
+}

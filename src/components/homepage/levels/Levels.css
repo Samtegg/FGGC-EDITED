@@ -1,0 +1,168 @@
+.level-container {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 2rem 0;
+    display: flex;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #30CB0114;
+    z-index: -1;
+    
+}
+
+.level-heading {
+    text-align: center;
+    padding: 2rem;
+    color: #212529;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.level-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+
+
+.level-props {
+    width: 250px;
+    height:250px;
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+   
+}
+
+.first-level {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0;
+}
+
+
+.first-level .num-level{
+    width:56px;
+    height: 29px;
+    margin-left: 1rem;
+    background: var(--primary-brown);
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+.first-level .num-level > p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 190%;
+     
+}
+.upgrade-level {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-end;
+    width: 120px;
+    height:60px;
+    color: #5C5C5C;
+    margin-right: 1rem;
+} 
+
+.upgrade-level > .upgrade-money {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right; 
+}
+
+
+.upgrade-level > .level-upgrade {
+    width: auto;
+    height: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+
+
+
+
+.second-level {
+    background-color: var(--primary-brown);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.2rem;
+    border-radius: 0 0 20px 20px;
+    color: #ffffff;
+    color: var(--bg, #FFF);
+}
+.second-level > p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; 
+}
+
+.second-person {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+
+}
+
+.potential {
+    margin-top: 2rem;
+}
+
+
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .level-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .level-props,
+    .first-level,
+    .upgrade-level {
+        width: 100%;
+        max-width: 300px; /* Adjust max-width as needed */
+        margin: 0 auto; /* Center the elements */
+    }
+
+    .level-heading {
+        font-size: 20px; /* Adjust font size */
+        line-height: 40px; /* Adjust line height */
+    }
+}
+
+

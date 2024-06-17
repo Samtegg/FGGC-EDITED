@@ -1,0 +1,206 @@
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+
+}
+
+.activities-heading {
+    text-align: center;
+     /* Adjust spacing between headings and cards */
+    
+}
+
+.first-heading {
+  font-size: 25px;
+    font-weight: 500;
+}
+
+.second-heading {
+    font-size: 17px;
+}
+
+.card-activities {
+  
+    width: 100%;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1.6rem;
+    gap: 20px;
+}
+
+.card-act {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    font-size: 20px;
+    /* margin: 1rem; */
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.even {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    /* background-color: rgb(172, 226, 172); */
+}
+
+.card-act.odd {
+    /* background: radial-gradient(circle, #dddddd, #96959533); */
+    background-color: rgb(172, 226, 172);
+  
+}
+
+.act-num {
+    font-size: 70px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.act-num p {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.act-statement {
+    font-size: 18px;
+    width: 600px;
+    height: 300px;
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+.act-statement p {
+    width: 270px;
+    height: 275px;
+    line-height: 2.3;
+}
+
+
+.even-num {
+    font-size: 70px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.even-num p {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.even-statement {
+    font-size: 18px;
+    width: 600px;
+    height: 275px;
+    text-align: right;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+}
+
+.even-statement p {
+    width: 300px;
+    height: 275px;
+    line-height: 2.3;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-act {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .card-activities {
+        grid-template-columns: 1fr;
+    }
+    .card-act {
+        padding: 0rem; 
+        margin-right: 1rem;
+    }
+
+    .act-statement,
+    .even-statement {
+        width: auto; 
+        padding: 0 1rem; 
+        margin-right: 0; 
+    }
+
+    .act-num,
+    .even-num {
+        font-size: 40px; /* Adjusted font size for smaller screens */
+        margin: 0 1rem;
+    }
+
+    .even-num p {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .act-num p {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .even-statement p {
+        width: 200px;
+        height: 335px;
+        line-height: 2.3;
+        overflow: scroll;
+        font-size: 15px;
+    
+    }
+
+    .act-statement p {
+        width: 210px;
+        height: 335px;
+        line-height: 2.3;
+        overflow: scroll;
+        font-size: 15px;
+
+    }
+    .dont{
+        text-align: center;
+    }
+
+    .first-heading {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .second-heading {
+        font-size: 13px;
+    }
+
+
+    
+    
+}
+
+@media screen and (max-width: 330px) {
+    .activities-container {
+        max-width: 320px;
+    }
+}

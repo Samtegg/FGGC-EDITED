@@ -1,0 +1,129 @@
+.paymentconfirmed-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+
+.paymentconfirmed-second {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #F5F5F5;
+    border: 0px;
+}
+
+.paymentconfirmed-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 1rem 0rem 1rem;
+}
+
+.navbar-logo > img {
+    width: auto;
+    height: 80px;
+}
+
+.paymentconfirmed-content {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+
+.paymentconfirmed-content > .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 552px;
+    height: 370px;
+    flex-shrink: 0;
+    padding-top: 4% ;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+}
+
+.paymentconfirmed-content > .content-container > .paymentconfirmed-text {
+    color: var(--secondary-colour, #2B94D1);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; /* 55.08px */
+}
+
+.content-container > .awesome {
+    background: url(../../assets/Ellipse\ 130.png) no-repeat contain;
+}
+
+.paymentconfirmed-content > .content-container > .paymentconfirmed-instruction {
+    color: #878787;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; /* 24.48px */
+}
+
+.paymentconfirmed-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.paymentconfirmed-button > button {
+    color: #ffffff;
+    background-color: var(--primary-brown);
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    padding: 16px 30px 15px 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 328px;
+    border: 0;
+    cursor: pointer;
+    width: 350px;
+}
+
+.paymentconfirmed-button > button > p > .paymentconfirmed-continue {
+    color: var(--bg, #FFF);
+    text-align: center;
+    text-shadow: 0px 0.1px 0.1px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; /* 48.96px */
+}
+
+@media only screen and (max-width: 768px) {
+    .paymentconfirmed-content > .content-container {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 4% 2rem;
+    }
+
+    .paymentconfirmed-content > .content-container > .paymentconfirmed-text {
+        font-size: 24px;
+    }
+
+    .paymentconfirmed-content > .content-container > .paymentconfirmed-instruction {
+        font-size: 14px;
+    }
+
+    .paymentconfirmed-button > button {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .paymentconfirmed-button > button > p {
+        font-size: 16px;
+    }
+}

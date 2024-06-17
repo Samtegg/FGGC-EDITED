@@ -1,0 +1,185 @@
+.receivedportal-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.receivedportal-logo > .logo > img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: auto;
+    height: 80px;
+}
+
+.receivedportal-heading {
+    margin: 1rem;
+}
+.receivedportal-heading > h2 {
+    color: var(--amount-color, #5C5C5C);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.receivedportal-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.receivedportal-wallet {
+    width: 50%;
+    height: 150px;
+    display: inline;
+    background-image: url(../dashboardpage/../../assets/brown-background.png)  ;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+.receivedportal-dashboard{
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.receivedportal-dashboard > h2 {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 153%; /* 61.2px */
+}
+
+.receivedportal-dashboard > p   {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+}
+
+.receivedportal-dashboard > h4  {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 153%;
+}
+
+.receivedportal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background: #ffffff;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+}
+
+.receivedportal-content > div > .receivedportal-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.receivedportal-details > div > .receivedportal-name {
+    color: #343A40;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+}
+.receivedportal-details > div > .receivedportal-date {
+    color: var(--amount-color, #5C5C5C);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 200%; 
+
+}
+.receivedportal-details > div > .receivedportal-cash {
+    color: var(--credit-color, #51CF66);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%; 
+}
+
+.receivedportal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #a1a1a1;
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .receivedportal-container {
+        flex-direction: column;
+    }
+
+    .receivedportal-wallet,
+    .receivedportal-content {
+        width: 100%;
+    }
+
+    .receivedportal-content {
+        border-radius: 0;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .receivedportal-dashboard,
+    .receivedportal-heading {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .receivedportal-dashboard > h2,
+    .receivedportal-dashboard > p,
+    .receivedportal-dashboard > h4 {
+        font-size: 18px;
+    }
+    .receivedportal-dashboard > h2{
+        margin-top: 1rem;
+    }
+
+    .receivedportal-logo > .logo > img {
+        height: 60px;
+    }
+
+    .receivedportal-heading > h2 {
+        font-size: 24px;
+    }
+
+    .receivedportal-details > div > .receivedportal-name {
+        font-size: 16px;
+    }
+
+    .receivedportal-details > div > .receivedportal-date,
+    .receivedportal-details > div > .receivedportal-cash {
+        font-size: 13px;
+    }
+
+    .receivedportal-line {
+        margin: 0.5rem 0;
+    }
+}

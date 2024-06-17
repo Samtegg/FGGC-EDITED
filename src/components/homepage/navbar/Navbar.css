@@ -1,0 +1,294 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(255, 165, 0, 0.3);
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0;
+    height: 100%;
+    
+
+}
+
+nav > .logo > img {
+    margin-top: 4%;
+    margin-left: 5%;
+    width: auto;
+    height: 80px;
+}
+.hamburger {
+    display: none;
+}
+
+a {
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-item {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.nav-menu li:hover a {
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-brown);
+}
+
+.signin:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-brown);
+}
+
+.signup {
+    padding: 3px 20px;
+    background-color: var(--primary-green);
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.signup:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-brown);
+}
+
+
+.two {
+    display: flex;
+}
+
+@media screen and (max-width:940px) {
+    .header{
+        background-color: rgba(255, 165, 0, 0.3);
+        width: 100%;
+        height: 40px;
+    }
+    .hamburger {
+        display: block;
+        padding: 1rem 0 0 1rem;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        left: -100%;
+        z-index: 1;
+        background-color: rgba(255, 165, 0, 0.3);
+        background-size: cover;
+        width: 100%;
+        transition: .7s;
+        height: 100vh;
+
+        
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 2rem;
+        
+    }
+    .nav-menu {
+        flex-direction: column;
+        left: -100%;
+        
+    }
+
+    .two {
+        flex-direction: column;
+    }
+    
+    li {
+        margin: 1.5rem 0;
+    }
+    
+    .nav-item {
+        font-size: 1.2rem;
+        
+    }
+    
+    .nav-menu > li > a {
+        color: #fff;
+        margin-left: 1rem;
+        background-color: orange;
+        border-radius: 10px;
+        padding: 0.3rem;
+    }
+    .signin {
+        color: #fff;
+        background-color: orange;
+        border-radius: 10px;
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .nav-item li a:hover {
+        padding-bottom: 5px;
+        border-bottom: 3px solid var(--primary-brown) ;
+    }
+
+
+
+
+}
+
+
+
+
+/* .header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.header.header-bg {
+    background-color: rgba(0,0,0,.85);
+    transition: .5s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    
+}
+
+.logo {
+
+   
+  }
+
+
+
+
+.three {
+    
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .header{
+        background-color: rgba(0,0,0,0.9);
+    }
+    .hamburger {
+        display: block;
+        padding: 1rem;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: .7s;
+
+        
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 2rem;
+        
+    }
+    .nav-menu {
+        flex-direction: column;
+        left: -100%;
+        
+    }
+
+    .two {
+        flex-direction: column;
+    }
+    
+    li {
+        margin: 1.5rem 0;
+       
+    }
+    .nav-item {
+        font-size: 1.5rem;
+        
+    }
+    
+    .nav-menu li a {
+        color: #ffffff;
+        margin-left: 1rem;
+    }
+
+    .nav-item li a:hover {
+        padding-bottom: 5px;
+        border-bottom: 3px solid var(--primary-brown) ;
+    }
+
+
+    .nav-item .signin {
+        color: #ffffff
+    }
+
+
+} */

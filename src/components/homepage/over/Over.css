@@ -1,0 +1,48 @@
+.over-container {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--primary-green);
+}
+
+.over-writeup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left
+  
+}
+
+.over-writeup h3{
+    font-size: 40px;
+    color: #ffffff;
+    text-align: left;
+}
+.over-writeup p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .over-container {
+        grid-template-columns: 70% 30%; /* Use original layout for larger screens */
+    }
+
+    .over-img > img {
+        width: auto;
+        height: 50px;
+    }
+
+    .over-writeup p{
+        font-size: 15px;
+    }
+    .over-writeup h3{
+        font-size: 15px;
+    }
+
+
+}
+
+

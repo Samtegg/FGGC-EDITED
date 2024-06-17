@@ -1,0 +1,572 @@
+.dashboard-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.dashboard-heading > img {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: auto;
+        height: 80px;
+
+}
+
+.dashborad-headingicon {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.dashborad-headingicon > .dashboard-timeout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-brown);
+    width: 270px;
+    height: 70px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+    margin: 0 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dashboard-timeout > .payment-link > h5 {
+    color: #343A40;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+
+.dashboard-timeout > .payment-link > h5 > span{
+    color: var(--debit-color, #FA0000);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+
+}
+
+.dashboard-timeout > .payment-link >  p {
+    color: var(--debit-color, #FA0000);
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+
+}
+
+.dashborad-headingicon > p {
+    margin: 0 1rem;
+}
+
+
+.dashboard-headingicon > svg {
+    margin: 0 1rem;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 21% 79%;
+    margin: 2rem 0;
+    
+}
+.dashboard-leftbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1rem;
+}
+
+
+.dashboard-leftbar > p {
+    color: #868E96;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.leftbar-mainmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-leftbar > div > .leftbar-link {
+    width: auto;
+    height: 50px;
+    flex-shrink: 0;
+    color: var(--dark-lettering, #000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 1.5rem 0rem;
+    padding: 1rem 0;
+    border-radius: 8px;
+}
+
+.leftbar-mainmenu .leftbar-link:hover {
+    background-color: var(--primary-brown);
+    color: #ffffff;
+}
+
+.leftbar-mainmenu > .accountupdate-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.leftbar-upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 205px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF9DB;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 0.5rem;
+}
+
+.leftbar-upgrade > h4 {
+    color: #FC912B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+}
+
+.leftbar-upgrade > p {
+    margin: 0.7rem 0;
+    color: #343A40;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.5px;
+    }
+
+.leftbar-upgrade > .dashboard-upgrade  {
+    width: 138px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #343A40;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    cursor: pointer;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+.leftbar-logout {
+    padding: 1rem 0;
+    margin: 2rem 0;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--debit-color, #FA0000);
+    text-align: center;
+    color: #ffffff;
+    cursor:pointer;
+}
+
+.leftbar-logout > p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ash-back {
+    background-color: gray;
+}
+
+
+.dashboard-rightbar {
+    display: flex;
+    flex-direction: column;
+    background: #E8E8E8;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.dashboard-rightbar > h2 {
+    text-align: left;
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3rem;
+}
+
+.dashboard-calender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-calender > .calender-content > h3 {
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dashboard-calender > .calender-content > p {
+    color: #868E96;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.calender-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 238px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--bg, #FFF);
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.calender-icon > p {
+    margin: 0 0.6rem;
+}
+
+.wallet-container {
+    display: inline;
+    background-image: url(../dashboardpage/../../assets/brown-background.png)  ;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+.dashboard-wallet {
+    color: #ffffff;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.dashboard-wallet > h2 {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 153%; /* 61.2px */
+}
+
+
+.dashboard-wallet > p {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; 
+}
+
+.dashboard-wallet > h4 {
+    color: var(--bg, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+
+}
+
+.dashboard-pay {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    margin: 0 1rem;
+    align-items: center;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+.dashboard-pay > .pay{
+    width: auto;
+    height: 254px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 2px 12px rgba(37, 51, 66, 0.15));
+    border-radius: 8px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.payout > h4 {
+    color: var(--debit-color, #FA0000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.payout-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.payout-svg {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.payout > .payout-content > div > .payout-name {
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.payout > .payout-content > div > .payout-date {
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.received > h4 {
+    color: #27C500;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.received-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.received-svg {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.received > .received-content > div > .received-name {
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.received > .received-content > div > .received-date {
+    color: #343A40;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.pay-details {
+    color: #343A40;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.pay-details > p {
+    padding: 0.2rem 1rem;
+    line-height: -5px;
+}
+
+.dashboard-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboard-container {
+        padding: 0 1rem;
+    }
+    .hamburger {
+        z-index: 3;
+    }
+
+    .dashboard-heading {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: .7s;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .dashborad-headingicon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-content {
+        grid-template-columns: 100%;
+
+    }
+    .dashboard-leftbar {
+        position: absolute;
+        top: 47.8%;
+        left: -120%; 
+        transition: .7s;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        margin: 0;
+        width: 100%;
+       
+      }
+      
+      .dashboard-leftbar.active {
+        left: 0;
+      }
+      
+      .dashboard-leftbar > div > .leftbar-link {
+        color: #ffffff;
+      }
+ 
+
+    .dashboard-rightbar {
+        padding: 1rem;
+    }
+
+    .dashboard-calender {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .calender-icon {
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    .dashboard-pay {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .dashboard-pay > .pay {
+        width: 100%;
+    }
+
+    .payout-svg,
+    .received-svg {
+        justify-content: flex-start;
+    }
+
+    .pay-details {
+        justify-content: center;
+    }
+
+    .dashboard-wallet,
+    .wallet-container {
+        padding: 1rem;
+    }
+
+    .dashboard-wallet > h2 {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .dashboard-wallet > p,
+    .dashboard-wallet > h4 {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .leftbar-upgrade {
+        width: 100%;
+    }
+}
+
+
+/* .logout__button{
+    background-color: var(--primary-brown);
+    color:var(--primary-white);
+    padding: 1rem 3rem;
+    margin: 0 0.5rem;
+    border:none;
+    height:fit-content;
+    font-weight:700;
+} */

@@ -1,0 +1,16 @@
+.loader__animate{
+    animation: rotate 2s linear infinite;
+    
+}
+
+/* Define the animation */
+@keyframes rotate {
+    /* Rotate the div from 0 degrees to 360 degrees */
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

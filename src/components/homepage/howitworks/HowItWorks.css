@@ -1,0 +1,148 @@
+.how-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: radial-gradient(circle, #dddddd, #96959533);
+    
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.heading-container h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+.moto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moto > img {
+    width: auto;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-left: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+}
+
+.diff-steps {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    margin: 1rem 0;
+}
+
+.small-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+}
+
+.small-steps .bold-step {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.small-steps:nth-child(2){
+    font-size: 15px;
+}
+
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-green);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 3px;
+    height: 40px;
+    margin-left: 11px;
+    background-color: var(--primary-green);
+  }
+
+
+  @media screen and (max-width:768px) {
+    .how-container{
+        padding-top: 1rem;
+    }
+    .heading-container > h2 {
+        font-size: 18px;
+    }
+
+    .heading-container > p {
+        font-size: 12px;
+    }
+    .content {
+        grid-template-columns: 1fr ;
+    }
+
+    .moto > img {
+        width: auto;
+        height: 100px;
+    }
+
+    .moto > p {
+        font-size: 12px;
+    }
+
+    .steps {
+        padding-left: 1rem;
+       
+    }
+
+    .small-steps .bold-step {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .small-steps > p {
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width:746px) {
+    .how-container {
+        width: 100%;
+    }
+    
+  }
+

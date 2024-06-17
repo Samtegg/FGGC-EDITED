@@ -1,0 +1,236 @@
+.notification-container {
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+
+.notification-navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+    
+}
+
+.notification-user > h3 {
+    color: #343A40;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+    margin: 0 1rem;
+}
+
+.notification-user > p {
+    color: #868E96;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+    margin: 0 1rem;
+}
+
+.notification-level > p{
+    color: var(--new-primary, #CB822A);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 153%;
+    margin: 1rem;
+}
+
+.notification-whole {
+    background: #F5F5F5;
+    padding: 2rem;
+}
+
+.notification-content {
+    display: inline-flex;
+    flex-direction: column;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 1rem 0;
+}
+
+.notification-content > h2 {
+    color: var(--dark-lettering, #000);
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%; 
+    margin: 0.7rem 0;
+}
+
+.notification-content > p {
+    color: var(--amount-color, #5C5C5C);
+    font-family: Poppins;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+}
+
+.notification-content > .notification-timeout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.notification-timeout > .timeout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-brown);
+    margin-top: 2rem ;
+    padding: 1rem ;
+    width: 480px;
+    height: 150px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.timeout > h5 {
+    color: #343A40;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+
+.timeout > h5 > span{
+    color: var(--debit-color, #FA0000);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+
+}
+
+.timeout > p {
+    color: var(--debit-color, #FA0000);
+text-align: center;
+font-family: Poppins;
+font-size: 55px;
+font-style: normal;
+font-weight: 600;
+
+}
+
+.notification-proceed {
+    border-radius: 10px;
+    background: var(--new-2-sec, rgba(48, 203, 1, 0.28));
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+   
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-proceed > p {
+    color: var(--dark-lettering, #000);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.notification-proceed > .payment-name {
+    color: #878787;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+padding: 1rem;
+
+}
+
+.makepayment-button {
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.button-position {
+    display: flex;
+    justify-content: center;
+}
+
+.notification-button  {
+    color: #ffffff;
+    background-color: var(--primary-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 20px;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.notification-button > p {
+    color: var(--bg, #FFF);
+    text-align: center;
+    text-shadow: 0px 0.1px 0.1px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+}
+
+@media only screen and (max-width: 768px) {
+    .notification-proceed {
+        flex-direction: column;
+    }
+    
+    .genealogy-content {
+        padding: 2rem;
+    }
+
+    .genealogy-content > .genealogy-contentlist {
+        padding: 2rem;
+    }
+
+    .genealogy-searchbox > div {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .genealogy-count {
+        justify-content: center;
+    }
+
+    .genealogy-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .genealogy-details > div,
+    .genealogy-details > .genealogy-checkinfo {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
